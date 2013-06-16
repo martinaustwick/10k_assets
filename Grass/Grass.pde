@@ -1,3 +1,8 @@
+/*
+  Written by Martin Austwick in 2013
+*/
+
+
 import processing.video.*;
 
 int alphaVal = 255;

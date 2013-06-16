@@ -1,3 +1,7 @@
+/*
+  Written by Martin Austwick, 2013
+*/
+
 import processing.video.*;
 
 MovieMaker mm;

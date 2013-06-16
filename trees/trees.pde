@@ -1,3 +1,12 @@
+/*
+  The structure of this code was largely
+  based on work by Alasdair Turner.
+  
+  Other bits by Martin Austwick, 2013.
+*/
+
+
+
 import processing.video.*;
 MovieMaker mm;
 boolean moving = true;
