@@ -19,7 +19,7 @@ Branch parent;
 
 void setup()
 {
-    size(500, 500);
+    size(500, 500, P3D);
     smooth();
     strokeWeight(5);
     parent = new Branch(0);

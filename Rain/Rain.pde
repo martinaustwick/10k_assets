@@ -2,16 +2,16 @@
   Written by Martin Austwick, 2013
 */
 
-import processing.video.*;
+//import processing.video.*;
 
-MovieMaker mm;
+//MovieMaker mm;
 boolean movie = false;
 
 ArrayList<Raindrop> drops;
 
 PVector speed;
 //use cursor keys to change background transparency
-int bgAlpha = 200;
+int bgAlpha = 10;
 
 void setup()
 {
@@ -22,7 +22,7 @@ void setup()
     drops.add(new Raindrop());
     speed = new PVector(0, 5);
 
-  mm = new MovieMaker(this, width, height, "movies/" + year() + month() + day() + hour() + minute() +".mov", 25, MovieMaker.ANIMATION, MovieMaker.LOW);
+  //mm = new MovieMaker(this, width, height, "movies/" + year() + month() + day() + hour() + minute() +".mov", 25, MovieMaker.ANIMATION, MovieMaker.LOW);
   background(255);
 }
 
@@ -50,7 +50,7 @@ void draw()
     
     if(drops.size()<500) drops.add(new Raindrop());
     
-    if(movie) mm.addFrame();
+    //if(movie) mm.addFrame();
 }
 
 class Raindrop
@@ -94,5 +94,3 @@ class Raindrop
         popMatrix();
     }
 }
-
-
